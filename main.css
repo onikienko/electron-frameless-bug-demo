@@ -1,0 +1,13 @@
+html {
+    cursor: crosshair;
+    background-color: aqua;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    cursor: crosshair;
+    background-color: lightgrey;
+    margin: 0;
+    padding: 0;
+}

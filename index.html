@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <title>Frameless window bug</title>
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <h1>Hello Frameless Window Bug!</h1>
+    <h3>
+      Try to click near window borders. Notice cursor change (will change to "default", but should be "crosshair"). Notece console (no mousedown event fired)
+    </h3>
+    We are using Node.js <span id="node-version"></span>,
+    Chromium <span id="chrome-version"></span>,
+    and Electron <span id="electron-version"></span>.
+
+    <!-- You can also require other files to run in this process -->
+    <script src="./renderer.js"></script>
+  </body>
+</html>
